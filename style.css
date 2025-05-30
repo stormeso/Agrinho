@@ -4,11 +4,12 @@
 :root {
     --primary-color: #026773;
     --secondary-color: #3CA6A6;
-    --text-color: #024959;
-    --background-color: #ec7ce8;
+    --text-color: #000000;
+    --background-color: #b75fb4;
     --font-body: "Chocolate Classical Sans", serif;
     --font-titulo: "Rakkas", serif;
 }
+
 
 * {
     margin: 0;
@@ -22,7 +23,8 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    
+    text-align: center;
+
 }
 
 h3 {
