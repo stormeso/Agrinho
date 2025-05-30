@@ -7,14 +7,48 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>]
+<style>
+    #alerta-fixo {
+      position: fixed;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      z-index: 1055;
+      min-width: 300px;
+      max-width: 90vw;
+    }
+  </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<body class="bg-success-subtle" >
+
+  <div style="position: fixed; bottom: 20px; left: 20px; z-index: 1060;">
+  <button onclick="mostrarAlerta()" class="btn btn-success">Mostrar Alerta</button>
+   </div>
+
+  <div id="alerta"></div>
+
+  <script>
+    function mostrarAlerta() {
+      document.getElementById('alerta').innerHTML = `
+        <div id="alerta-fixo" class="alert alert-warning alert-dismissible fade show" role="alert">
+          NÃO POLUA O MEIO AMBIENTE, SEU MONSTRO
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      `;
+    }
+  </script>
+
+    <header>
         <div class="container text-center mt-5">
        <p class="fs-1"> Poluição da água</p>
         
-<img src="lixodomestico.jpg" class="rounded mx-auto d-block" style="margin-bottom: 20px;  alt="lixodomestico">       
+<img src="lixodomestico.jpg" class="rounded mx-auto d-block" style="margin-bottom: 20px;  alt="lixodomestico">    
+<div class="p-3 mb-2 bg-info-subtle text-info-emphasis">.   
  <p> A poluição da água alteração da qualidade da água tornando-a prejudicial para o ambiente e imprópria para consumo, o que afeta diretamente a manutenção da vida no planeta.</p>
-        <nav>
+ </div>       
+ <nav>
+
           <div class="container text-center mt-5">
            <div class="container">
   <div class="row text-center">
